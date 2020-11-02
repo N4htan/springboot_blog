@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//implementação dos metodos definidos na interface
 @Service
 public class CodeblogServiceImpl implements CodeblogService {
 
@@ -16,16 +17,19 @@ public class CodeblogServiceImpl implements CodeblogService {
 
     @Override
     public List<Post> findAll() {
+
         return codeblogRepository.findAll();
     }
 
     @Override
     public Post findById(long id) {
+
         return codeblogRepository.findById(id).get();
     }
 
     @Override
     public Post save(Post post) {
+
         return codeblogRepository.save(post);
     }
 }

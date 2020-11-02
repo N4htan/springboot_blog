@@ -4,10 +4,12 @@ import com.spring.codeblog.model.Post;
 
 import java.util.List;
 
+//onde definimos os metodos
+
 public interface CodeblogService {
 
-    List<Post> findAll();
-    Post findById(long id);
-    Post save(Post post);
+    List<Post> findAll(); //retorna uma lista de posts
+    Post findById(long id); //retorna um unico post
+    Post save(Post post); //recebe um novo post
 
 }
